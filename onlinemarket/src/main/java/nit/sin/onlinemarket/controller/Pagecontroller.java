@@ -11,7 +11,7 @@ public class Pagecontroller {
 	public ModelAndView index() {
 		
 		ModelAndView mv= new ModelAndView("page");
-		mv.addObject("Hello", "Welcome To Spring Web MVC");
+		mv.addObject("greeting", "Welcome To Spring Web");
 		
 		return mv;
 	}
