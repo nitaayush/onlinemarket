@@ -7,12 +7,12 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class Pagecontroller {
 	
-	@RequestMapping(value= {"/", "/home", "/index"})
+	@RequestMapping(value= "/")
 	public ModelAndView index() {
 		
-		ModelAndView mv= new ModelAndView("page");
+		ModelAndView mv= new ModelAndView();
 		mv.addObject("greeting", "Welcome To Spring Web");
-		
+		mv.setViewName("page");
 		return mv;
 	}
 
