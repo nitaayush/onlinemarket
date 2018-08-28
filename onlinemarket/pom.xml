@@ -15,6 +15,15 @@
 	</properties>
 	
 	<dependencies>
+	
+		<!-- Link backend project -->
+		<dependency>
+	<groupId>nit.sin</groupId>
+	<artifactId>marketbackend</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+</dependency>
+	
 		<!-- JAVA EE API -->
 
 		<dependency>

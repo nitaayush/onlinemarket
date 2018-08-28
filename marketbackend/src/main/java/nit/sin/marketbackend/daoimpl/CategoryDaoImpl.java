@@ -3,9 +3,11 @@ package nit.sin.marketbackend.daoimpl;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+
 import nit.sin.marketbackend.dao.CategoryDao;
 import nit.sin.marketbackend.dto.Category;
-
+@Repository("categoryDAO")
 public class CategoryDaoImpl implements CategoryDao {
 	
 	private static List<Category> categories = new ArrayList<>();
