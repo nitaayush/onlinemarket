@@ -9,7 +9,7 @@ public interface CategoryDao {
 	
 	
 	List<Category> list();
-	
+	Category get(int id);
 	
 	
 	
