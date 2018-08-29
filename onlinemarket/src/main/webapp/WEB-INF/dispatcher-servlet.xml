@@ -15,7 +15,7 @@
    
    
    <context:component-scan base-package="nit.sin.onlinemarket.controller"/>
-   <context:component-scan base-package="nit.sin.marketbackend.daoimpl"/>
+   <context:component-scan base-package="nit.sin.marketbackend"/>
    
    
    <bean id="viewResolver"

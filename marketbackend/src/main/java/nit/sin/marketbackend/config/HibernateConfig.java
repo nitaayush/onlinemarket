@@ -9,10 +9,10 @@ import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.ejb.access.LocalStatelessSessionProxyFactoryBean;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+
 
 @Configuration
 @ComponentScan(basePackages="{nit.sin.marketbackend.dto}")
@@ -73,20 +73,15 @@ public class HibernateConfig {
 		return properties;
 	}
 	
-	//transaction manager bean
-	@Bean
-	public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory) {
-		HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
-		return transactionManager;
+	
+	// transactionManager bean
+		@Bean
+		public HibernateTransactionManager getTransactionManager(SessionFactory sessionFactory) {
+			HibernateTransactionManager transactionManager = new HibernateTransactionManager(sessionFactory);
+			return transactionManager;
+			
+		}
+		
 		
 		
 	}
-	
-	
-	
-	}
-	
-	
-	
-	
-
