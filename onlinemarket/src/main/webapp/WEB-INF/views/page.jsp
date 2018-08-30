@@ -23,6 +23,8 @@
 
 <script>
 	window.menu = '${title}';
+	
+	window.contextRoot ='${contextRoot}'
 </script>
 
 <!-- Bootstrap Core CSS -->
@@ -30,6 +32,11 @@
 
 <!-- Bootstrap Readable theme CSS -->
 <link href="${css}/bootstrap-redable-theme.css" rel="stylesheet">
+
+
+<!-- Bootstrap DataTables CSS -->
+<link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
+
 
 <!-- Custom CSS -->
 <link href="${css}/myapp.css" rel="stylesheet">
@@ -87,6 +94,10 @@
 		
 		<!-- DataTable plugin -->
 		<script src="${js}/jquery.dataTables.js"></script>
+		
+		<!-- DataTable Bootstrap Script -->
+		<script src="${js}/dataTables.bootstrap.js"></script>
+		
 
 		<!-- Self coded Javascript -->
 		<script src="${js}/myapp.js"></script>
