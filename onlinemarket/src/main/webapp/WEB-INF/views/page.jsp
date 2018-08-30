@@ -19,22 +19,23 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Online Market -${title}</title>
+<title>Online Market - ${title}</title>
 
 <script>
 	window.menu = '${title}';
 	
-	window.contextRoot ='${contextRoot}'
+	window.contextRoot = '${contextRoot}'
+	
 </script>
 
 <!-- Bootstrap Core CSS -->
 <link href="${css}/bootstrap.min.css" rel="stylesheet">
 
-<!-- Bootstrap Readable theme CSS -->
-<link href="${css}/bootstrap-redable-theme.css" rel="stylesheet">
+<!-- Bootstrap Readable Theme -->
+<link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
 
 
-<!-- Bootstrap DataTables CSS -->
+<!-- Bootstrap DataTables -->
 <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">
 
 
@@ -61,7 +62,7 @@
 
 		<div class="content">
 			
-			<!-- Loading home content -->
+			<!-- Loading the home content -->
 			<c:if test="${userClickHome == true }">
 				<%@include file="home.jsp"%>
 			</c:if>
@@ -77,14 +78,18 @@
 			</c:if>
 			
 			<!-- Load only when user clicks contact -->
-			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true}">
+			<c:if test="${userClickAllProducts == true or userClickCategoryProducts == true }">
 				<%@include file="listProducts.jsp"%>
-			</c:if>
+			</c:if>			
+			
 
 		</div>
 
+
 		<!-- Footer comes here -->
 		<%@include file="./shared/footer.jsp"%>
+
+
 
 		<!-- jQuery -->
 		<script src="${js}/jquery.js"></script>
@@ -92,14 +97,15 @@
 		<!-- Bootstrap Core JavaScript -->
 		<script src="${js}/bootstrap.min.js"></script>
 		
-		<!-- DataTable plugin -->
+		<!-- DataTable Plugin -->
 		<script src="${js}/jquery.dataTables.js"></script>
 		
 		<!-- DataTable Bootstrap Script -->
 		<script src="${js}/dataTables.bootstrap.js"></script>
 		
-
-		<!-- Self coded Javascript -->
+		
+		
+		<!-- Self coded javascript -->
 		<script src="${js}/myapp.js"></script>
 
 	</div>
